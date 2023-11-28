@@ -83,7 +83,7 @@ const ITEMS_PER_PAGE = 6;
 export async function fetchFilteredInvoices(
   query: string,
   currentPage: number,
-) {
+): Promise<[InvoicesTable]> {
 
   noStore();
 
